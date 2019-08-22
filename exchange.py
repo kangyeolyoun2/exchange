@@ -54,7 +54,7 @@ changePrice:{}, cashBuyingPrice:{}, cashSellingPrice:{}".format(
     
 class SaveDatabase:
 
-    def __init__(self, base, df, ip="13.209.190.69", pw="yky2158021", database="exchange"):
+    def __init__(self, base, df, ip="15.164.106.92", pw="yky2158021", database="exchange"):
         self.mysql_client = create_engine("mysql://root:{}@{}/{}?charset=utf8".format(pw, ip, database))
         self.datas = df.to_dict("records")
         self.base = base
